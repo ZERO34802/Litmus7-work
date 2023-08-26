@@ -24,7 +24,7 @@
       line-height: 130%;
     }
 
-    .tags {
+    .tags.html-elements {
       margin-bottom: 100px;
     }
   </style>
@@ -32,7 +32,7 @@
 
 <body>
   <div class="main-heading">
-    <h1 class="main-heading-text">HTML Concepts</h1>
+    <h1 class="main-heading-text"><u>HTML Concepts</u></h1>
   </div>
   <div class="tags">
     <h2><u>HTML Tags</u></h2>
@@ -109,10 +109,10 @@
       </div>
     </div>
   </div>
-  <div>
+  <div class="html-elements">
     <h2><u>HTML Elements</u></h2>
     <p>The HTML element is everything from the start tag to the end tag:</p>
-    <img src="./htmlconceptsimgs/htmlelementsexample.jpg">
+    <img src="./htmlconceptsimgs/htmlelementsexample.jpg" alt="depiction of html element format">
     <p>Above is an example of how an element looks like in HTML, it starts with an opening tag, followed by the content
       that
       is supposed to be displayed in the element and is finished using the closing tag of the element</p>
@@ -131,6 +131,106 @@
       </ul>
     </div>
   </div>
+  <div class="semantic&nonsemantic-elements">
+    <h2><u>Semantic Elements & Non-Semantic Elements</u></h2>
+    <div>
+      <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+    </div>
+    <div class="examples">
+      <p>Examples of <strong>Non-semantic</strong> elements are : &#60;div&#62; & &#60;span&#62; , they tell nothing
+        about their content
+      </p>
+      <p>Examples of <strong>Semantic</strong> elements are : &#60;form&#62; & &#60;table&#62; , they tell nothing
+        about their content
+      </p>
+    </div>
+  </div>
+  <div class="Section-element">
+    <h3><u>Section-Element</u></h3>
+    <section>
+      <p>The <strong>&#60;section&#62;</strong> element defines a section in a document.
+        A section is a thematic grouping of content, typically with a heading.<br>
+
+        Examples of where a <strong>&#60;section&#62;</strong> element can be used:<br>
+
+      <ul>
+        <li>Chapters</li>
+        <li>Introduction</li>
+        <li>News items</li>
+        <li>Contact information</li>
+      </ul>
+      A web page could normally be split into sections for introduction, content, and contact information.
+      <u><strong>This portion in the html has been written in the section element.</strong></u>
+      </p>
+    </section>
+  </div>
+  <div class="Article-element">
+    <h3><u>Article-Element</u></h3>
+    <article>
+      <p>The
+        <strong>&#60;article&#62;</strong> element specifies independent, self-contained content.
+
+        An article should make sense on its own, and it should be possible to distribute it independently from the rest
+        of the
+        web site.
+
+        Examples of where the <strong>&#60;article&#62;</strong> element can be used:<br>
+
+      <ul>
+        <li>Forum posts</li>
+        <li>Blog posts</li>
+        <li>User comments</li>
+        <li>Newspaper articles</li>
+      </ul>
+      A web page could normally be split into sections for introduction, content, and contact information.
+      <u><strong>This portion in the html has been written in the article element.</strong></u>
+      </p>
+    </article>
+  </div>
+  <div class="header-element">
+    <h3><u>Header Element</u></h3>
+    <p>
+      The <strong>&#60;header&#62;</strong> element represents a container for introductory content or a set of
+      navigational links.
+
+      A
+      <strong>&#60;header&#62;</strong> element typically contains:
+    <ul>
+      <li>one or more heading elements</li>
+      <li>logo or icon</li>
+      <li>authorship information</li>
+    </ul>
+    <img src="HTML/htmlconceptsimgs/headerelementexample.jpg">
+    </p>
+  </div>
+  <div class="footer-element">
+    <h3><u>Footer Element</u></h3>
+    <p>The <strong>&#60;footer&#62;</strong> element defines a footer for a document or section.
+
+      A
+      <strong>&#60;footer&#62;</strong> element typically contains:
+    <ul>
+      <li>authorship information</li>
+      <li>copyright information</li>
+      <li>contact information</li>
+    </ul>
+    <img src="HTML/htmlconceptsimgs/footerelementexample.jpg">
+    </p>
+  </div>
+  <div class="Nav-element">
+    <h3><u>Nav Element</u></h3>
+    <p>The <strong>&#60;nav&#62;</strong> element defines a set of navigation links. These links can be internal as well
+      as
+      external.<br>Not all links in a document must be inside the nav element, only the major blocks<br>All the below
+      links are in a nav element</p>
+    <nav>
+      <a href="https://www.w3schools.com/html/">HTML</a><br>
+      <a href="https://www.w3schools.com/css/">CSS</a><br>
+      <a href="https://www.w3schools.com/js/">JavaScript</a><br>
+      <a href="https://jquery.com/">jQuery</a>
+    </nav>
+  </div>
+
 </body>
 
 </html>
