@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      /*USING DISPLAY FLEX TO CENTER  A DIV*/
+      /* display: flex;
+      justify-content: space-around;
+      align-items: center;*/
+      height: 100vh;
+
+      /*USING DISPLAY GRID TO CENTER A DIV*/
+      display: grid;
+      place-items: center;
+    }
+
+    #centerdiv {
+      border: 1px red solid;
+      padding: 10px;
+      width: fit-content;
+
+      /* USING ABSOLUTE METHOD TO CENTER A DIV*/
+      /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <!-- <div id="centerdiv" class="center-div">
+      <p>centering the div</p>
+    </div> -->
+    <div id="centerdiv" class="center-div">
+      <p>centering the div</p>
+    </div>
+    <!-- <div id="centerdiv" class="center-div">
+      <p>centering the div</p>
+    </div> -->
+  </div>
+</body>
+
+</html>
