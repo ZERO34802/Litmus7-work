@@ -236,8 +236,77 @@
               <option value="fiat">Fiat</option>
               <option value="audi">Audi</option>
             </select>
+            <h4><b><u>option</u></b></h4>
+            <p>This element defines an option that can be selected.It is used inside the <b>select</b> tag
+              By default, the first item in the drop-down list is selected.</p> <br>
+            <h4><b><u>mutliple</u></b></h4>
+            <p>Use the multiple attribute to allow the user to select more than one value</p>
+          </li>
+          <li>
+            <h3><b><u>Text Area</u></b></h3>
+            <p>This element defines a multi-line input field</p>
+            <img src="./formsimgs/textarea1.jpg"><br>
+            <label for="text-area">Text-Area Example</label><br>
+            <textarea name="message" rows="10" cols="30" id="text-area">
+            </textarea>
+            <p>The <b>rows</b> attribute specifies the visible number of lines in a text area.</p>
+            <p>The <b>cols</b> attribute specifies the visible width of a text area.</p>
           </li>
         </ul>
+      </div>
+      <div class="InputTypes">
+        <h3><b><u>Input Types</u></b></h3>
+        <p>Here are the different input types you can use in HTML:</p>
+        <div class="inputtypes-examples">
+          <ul>
+            <li>
+              <h4>type = text</h4>
+              <form>
+                <label for="fname">First Name</label> <br>
+                <input type="text" id="fname" name="myName">
+              </form>
+            </li>
+            <li>
+              <h4>type = password</h4>
+              <form>
+                <label for="pwd">First Name</label> <br>
+                <input type="password" id="pwd" name="myPassword">
+              </form>
+            </li>
+            <li>
+              <h4>type = Submit</h4>
+              <form>
+                <!-- <label for="pwd">First Name</label> <br> -->
+                <input type="submit" value="Submit Now">
+              </form>
+            </li>
+            <li>
+              <h4>type = Reset</h4>
+              <form>
+                <!-- <label for="pwd">First Name</label> <br> -->
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="myName">
+                <input type="reset" value="Reset Now">
+              </form>
+            </li>
+            <li>
+              <h4>type = Radio</h4>
+              <form>
+                <input type="radio" id="gender" name="myPassword">
+                <label for="gender">Male</label> <br>
+
+              </form>
+            </li>
+            <li>
+              <h4>type = Color</h4>
+              <form>
+                <label for="favcolor">Choose your color</label> <br><br>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+                <input type="submit" value="Submit Now">
+              </form>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
