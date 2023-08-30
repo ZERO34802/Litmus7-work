@@ -20,47 +20,199 @@
   <div class="main-heading">
     <h1 class="main-heading-text"><b><u>FORMS AND TABLES</u></b></h1>
   </div>
-  <div class="FormsDiv">
-    <h2><u> Html Forms</u></h2>
-    <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
-      The <strong>&#60;form&#62;</strong> element is used to create an HTML form for user input, It is a container for
-      different types of
-      input elements, such as :</p>
-    <ul>
-      <li>text fields</li>
-      <li>check-boxes</li>
-      <li>radio-buttons</li>
-      <li>submit-buttons</li>
-    </ul>
-    <img src="formsimgs/formstag.jpg" width="900px">
-  </div>
-  <div class="input-element">
-    <h3><b><u>input element</u></b></h3>
-    <p>It is the most used form element, An input element can be displayed in many ways, depending on the <b>"type"</b>
-      attribute of the input element, here is the general syntax and some examples :
-    </p>
-    <img src="./formsimgs/inputtag.jpg">
-    <ul>
-      <li>
-        <p><b>type = text</b></p>
-        <input type="text">
-      </li>
-      <li>
-        <p><b>type = radio</b></p>
-        <input type="radio">
-      </li>
-      <li>
-        <p><b>type = checkbox</b></p>
-        <input type="checkbox">
-      </li>
-      <li>
-        <p><b>type = submit</b></p>
-        <input type="submit" value="submit now">
-      </li>
-    </ul>
-    <p>The <b>name</b> attribute specifies the name of the specefic input element using which it's data can be accessed
-      later on after the form is submitted and <b>id</b> attribute specifies the id of the input element using which it
-      can be linked to a <b>label</b> element</p>
+  <div class="html-forms">
+    <div class="forms">
+      <h2><u> Html Forms</u></h2>
+      <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+        The <strong>&#60;form&#62;</strong> element is used to create an HTML form for user input, It is a container for
+        different types of
+        input elements, such as :</p>
+      <ul>
+        <li>text fields</li>
+        <li>check-boxes</li>
+        <li>radio-buttons</li>
+        <li>submit-buttons</li>
+      </ul>
+      <img src="formsimgs/formstag.jpg" width="900px">
+    </div>
+    <div class="InputElement">
+      <h3><b><u>Input Element</u></b></h3>
+      <p>It is the most used form element, An input element can be displayed in many ways, depending on the
+        <b>"type"</b>
+        attribute of the input element, here is the general syntax and some examples :
+      </p>
+      <img src="./formsimgs/inputtag.jpg">
+      <ul>
+        <li>
+          <p><b>type = text</b></p>
+          <input type="text">
+        </li>
+        <li>
+          <p><b>type = radio</b></p>
+          <input type="radio">
+        </li>
+        <li>
+          <p><b>type = checkbox</b></p>
+          <input type="checkbox">
+        </li>
+        <li>
+          <p><b>type = submit</b></p>
+          <input type="submit" value="submit now">
+        </li>
+      </ul>
+      <p>The <b>name</b> attribute specifies the name of the specefic input element using which it's data can be
+        accessed
+        later on after the form is submitted and <b>id</b> attribute specifies the id of the input element using which
+        it
+        can be linked to a <b>label</b> element</p>
+    </div>
+    <div class="label-element">
+      <h3><b><u>Label Element</u></b></h3>
+      <p>The <strong>label</strong> tag defines a label for many form elements, it is also useful for screen-readers,
+        since when the user focuses on the input-element it will read out the label. It is also helpful for users who
+        have
+        trouble clicking on small spaces such as radio or checkboxes, if you click on the lable, it will automatically
+        toggle the radio or checkbox button. It can also be used as a text attatched to an input form element to define
+        what needs to be entered in it and will only be used for that element itself.
+        To do this, the <b>for</b> attribute of the label element should be equal to the <b>id</b> atribute of the form
+        element, it's syntax is as follows :</p>
+      <img src="./formsimgs/labeltag1.jpg"><br>
+      <label for="id-name-of-element">Example</label>
+      <input type="text" name="myText" id="id-name-of-element">
+    </div>
+    <div class="radio-buttons">
+      <h3><b><u>Radio buttons</u></b></h3>
+      <p>It defines a radio button, Radio buttons let a user select ONE of a limited number of choices. In order for the
+        user to be able to select only one from a limited number of choices, the <b>"name"</b> attribute of the input
+        tag
+        for each radio-button should be the same. Here is an example:</p>
+      <img src="./formsimgs/radiobutton1.jpg" alt="radio-button-example" width="800px">
+      <form>
+        <input type="radio" name="myRadio" id="male"><label for="male">Male</label><br>
+        <input type="radio" name="myRadio" id="female"><label for="female">Female</label><br>
+        <input type="radio" name="myRadio" id="Other"><label for="Other">Other</label><br>
+      </form>
+    </div>
+    <div class="checkbox">
+      <h3><b><u>CheckBox</u></b></h3>
+      <p>It defines a checkbox. Checkboxes let a user select zero or more options among a limited number of options,
+        here
+        the name attribute should not be the same.Here is an example:</p>
+      <img src="./formsimgs/checkbox1.jpg" alt="checkbox-example" width="800px">
+      <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+      </form>
+    </div>
+    <div class="SubmitButton">
+      <h3><b><u>Submit Button</u></b></h3>
+      <p> It defines a button for submitting the form data to a form-handler.
+
+        The form-handler is typically a file on the server with a script for processing input data.
+
+        The form-handler is specified in the form's <b>action</b> attribute.Here is an example:</p>
+      <img src="./formsimgs/submitbutton1.jpg" alt="submitbutton-example" width="800px">
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <br><br>
+    <div class="forms-attributes">
+      <h2><b><u>Forms-attributes</u></b></h2>
+      <p>Form attributes are properties or values that we change in the form or form elements that allow them to perform
+        different functions, here are a few examples of some attributes :</p>
+      <div class="forms-attributes-examples">
+        <ul>
+          <li>
+            <h3><b><u>Action</u></b></h3>
+            <p>The action attribute defines the action to be performed when the form is submitted.
+
+              Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+              In the example below, the form data is sent to a file called <b>"action_page.php"</b>. This file contains
+              a
+              server-side script
+              that handles the form data:</p>
+            <img src="./formsimgs/actionattribute-1.jpg">
+            <form action="/action_page.php">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </li>
+          <li>
+            <h3><b><u>Target</u></b></h3>
+            <p>The target attribute specifies where to display the response that is received after submitting the form.
+              The target attribute can have one of the following values:</p>
+            <ul>
+              <li><b>_blank</b> - The response is displayed in a new window or tab</li>
+              <li><b>_self</b> - The response is displayed in the current window</li>
+              <li><b>_parent</b> - The response is displayed in the parent frame</li>
+              <li><b>_top</b> - The response is displayed in the full body of the window</li>
+            </ul>
+            <p>The default value is _self</p>
+            <img src="./formsimgs/target1.jpg">
+            <form action="/action_page.php" target="_blank">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </li>
+          <li>
+            <h3><b><u>Method</u></b></h3>
+            <p>The method attribute specifies the HTTP method to be used when submitting the form data.The form-data can
+              be sent as URL variables or as HTTP post transaction. The default HTTP method when submitting form data is
+              GET.</p>
+            <img src="./formsimgs/method1.jpg">
+            <form action="/action_page.php" target="_blank" method="get">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+            <p><b>Notes on GET</b></p>
+            <ul>
+              <li>Appends the form data to the URL, in name/value pairs</li>
+              <li>NEVER use GET to send sensitive data!</li>
+              <li>The length of a URL is limited</li>
+            </ul>
+            <p><b>Notes on POST</b></p>
+            <ul>
+              <li>Appends the form data inside the body of the HTTP request</li>
+              <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+              <li>Form submissions with POST cannot be bookmarked</li>
+            </ul>
+          </li>
+          <li>
+            <h3><b><u>Autocomplete</u></b></h3>
+            <p>The autocomplete attribute specifies whether a form should have autocomplete on or off.
+              When autocomplete is on, the browser automatically complete values based on values that the user has
+              entered before.</p>
+            <img src="./formsimgs/autocomplete1.jpg">
+            <form action="/action_page.php" target="_blank" method="get" autocomplete="on">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 
