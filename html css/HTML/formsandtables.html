@@ -13,6 +13,43 @@
     .main-heading-text {
       margin-top: 10px;
     }
+
+    html {
+      font-family: sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200, 200, 200);
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+    }
+
+    td,
+    th {
+      border: 1px solid rgb(190, 190, 190);
+      padding: 10px 20px;
+    }
+
+    th {
+      background-color: rgb(235, 235, 235);
+    }
+
+    td {
+      text-align: center;
+    }
+
+    tr:nth-child(even) td {
+      background-color: rgb(250, 250, 250);
+    }
+
+    tr:nth-child(odd) td {
+      background-color: rgb(245, 245, 245);
+    }
+
+    caption {
+      padding: 10px;
+    }
   </style>
 </head>
 
@@ -316,6 +353,76 @@
           </ul>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="html-tables">
+    <div>
+      <h2><b><u>Tables</u></b></h2>
+    </div>
+    <div class="tables-info">
+      <p>A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just
+        this
+        purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web
+      </p>
+      <br>
+      <table>
+        <caption><b>Table Practice</b></caption>
+        <tr>
+          <th colspan="2">first cell-first row</th>
+          <td>second cell-first row</td>
+          <td>third cell-first row</td>
+
+        </tr>
+        <tr>
+          <td>first cell-second row</td>
+          <td>second cell-second row</td>
+          <td>third cell-second row</td>
+          <td>fourth cell-second row</td>
+
+        </tr>
+      </table>
+    </div>
+    <div class="table-information">
+      <p>There are different tags that are used within a table as well to display information.
+        these are:
+      </p>
+      <ul>
+        <li>
+          <h4><b><u>Table Cells</u></b></h4>
+          <p>Each table cell is defined by a <b>&#60;td&#62;</b>, everything that lies within the table cell tag is the
+            content of the cell</p>
+        </li>
+        <li>
+          <h4><b><u>Table Rows</u></b></h4>
+          <p>Each table row starts with a <b>&#60;tr&#62;</b></p>
+        </li>
+        <li>
+          <h4><b><u>Table Headers</u></b></h4>
+          <p>Sometimes you want your cells to be table header cells. In those cases use the <b>&#60;th&#62;</b></p>
+        </li>
+        <li>
+          <h4><b><u>Table Caption</u></b></h4>
+          <p>When we want to define a caption that should be present above the table to represent what the table shows
+            or a caption for the information being displayed, we can use the <b>&#60;caption&#62;</b> tag</p>
+        </li>
+      </ul>
+    </div>
+    <div class="table-attributes">
+      <p>HTML tables can have cells that span over multiple rows and/or columns. Two table attributes are :</p>
+      <ul>
+        <li>
+          <h4><b><u>Rowspan</u></b></h4>
+          <p>
+            To make a cell span over multiple rows, use the <b>rowspan</b> attribute:
+          </p>
+        </li>
+        <li>
+          <h4><b><u>Colspan</u></b></h4>
+          <p>
+            To make a cell span over multiple columns, use the <b>colspan</b> attribute:
+          </p>
+        </li>
+      </ul>
     </div>
   </div>
 </body>
