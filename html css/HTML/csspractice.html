@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 5px solid black;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .box1 {
+      background-color: red;
+    }
+
+    .box2 {
+      background-color: blue;
+      position: relative;
+      top: 100px;
+      left: 100px;
+    }
+
+    .box3 {
+      background-color: yellow;
+    }
+
+    .box4 {
+      background-color: green;
+    }
+
+    .box5 {
+      background-color: red;
+    }
+
+    .box6 {
+      background-color: blue;
+      position: absolute;
+      /* top: 100px;
+      left: 100px; */
+      top: 120px;
+    }
+
+    .box7 {
+      background-color: yellow;
+    }
+
+    .box8 {
+      background-color: green;
+    }
+
+    .box9 {
+      background-color: red;
+    }
+
+    .newbox {
+      background-color: blue;
+      /* position: fixed; */
+      /* top: 100px;
+      left: 100px; */
+      top: 100px;
+    }
+
+    .box11 {
+      background-color: saddlebrown;
+    }
+
+    .box12 {
+      background-color: green;
+    }
+
+    .parent-of-absolute {
+      position: relative;
+    }
+
+    .differencebox {
+      background-color: beige;
+      border: 5px solid black;
+      width: 100%;
+    }
+
+    .container {
+      background-color: beige;
+      border: 5px solid black;
+      margin: 2px;
+      padding: 2px;
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: wrap; */
+      height: 1200px;
+      /* justify-content: space-evenly; */
+      /* align-items: center; */
+      align-content: center;
+    }
+
+    .nb {
+      height: 200px;
+      width: 200px;
+      border: 2px solid brown;
+      margin: 2px;
+      padding: 2px;
+    }
+
+    #box1 {
+      background-color: aqua;
+      order: 500;
+      flex-grow: 4;
+    }
+
+    #box2 {
+      background-color: blue;
+    }
+
+    #box3 {
+      background-color: orange;
+    }
+
+    #box4 {
+      background-color: brown;
+      order: -1;
+      flex-basis: 400px;
+    }
+
+    section {
+      margin-bottom: 120px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><b><u>Practice of CSS Positioning Properties</u></b></h1>
+  <section>
+    <h2>
+      <u>Practice of relative positioning</u>
+    </h2>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+  </section>
+  <section>
+    <h2>
+      <u>Practice of absolute positioning</u>
+    </h2>
+    <div class="parent-of-absolute">
+      <div class="box5 box"></div>
+      <div class="box6 box"></div>
+      <div class="box7 box"></div>
+      <div class="box8 box"></div>
+    </div>
+  </section>
+  <section>
+    <h2>
+      <u>Practice of fixed positioning</u>
+    </h2>
+    <div class="box9 box"></div>
+    <div class="newbox box"></div>
+    <div class="box11 box"></div>
+    <div class="box12 box"></div>
+  </section>
+  <section>
+    <h1><u>Practice of FlexBox</u></h1>
+    <div class="container">
+      <div id="box1" class="nb">Box 1</div>
+      <div id="box2" class="nb">Box 2</div>
+      <div id="box3" class="nb">Box 3</div>
+      <div id="box4" class="nb">Box 4</div>
+    </div>
+  </section>
+</body>
+
+</html>
