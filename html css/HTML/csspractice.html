@@ -95,9 +95,9 @@
       display: flex;
       flex-direction: row;
       /* flex-wrap: wrap; */
-      height: 1200px;
-      /* justify-content: space-evenly; */
-      /* align-items: center; */
+      height: 100vh;
+      /* justify-content: space-around; */
+      align-items: center;
       align-content: center;
     }
 
@@ -112,7 +112,6 @@
     #box1 {
       background-color: aqua;
       order: 500;
-      flex-grow: 4;
     }
 
     #box2 {
@@ -126,7 +125,59 @@
     #box4 {
       background-color: brown;
       order: -1;
-      flex-basis: 400px;
+    }
+
+    .grid-practice {
+      background-color: bisque;
+      width: 100%;
+      height: 1200px;
+      padding: 2rem;
+      box-sizing: border-box;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    .gridbox {
+      border-radius: 20px;
+      border: 2px solid black;
+      /* margin: 20px; */
+    }
+
+    #gb1 {
+      /* height: 100%px; */
+      width: 100%;
+      background-color: brown;
+    }
+
+    #gb2 {
+      /* height: 200px; */
+      width: 100%;
+      background-color: aqua;
+    }
+
+    #gb3 {
+      /* height: 200px; */
+      width: 100%;
+      background-color: greenyellow;
+      grid-row: 2 / 3;
+      grid-column: 3 / 5;
+    }
+
+    #gb4 {
+      /* height: 200px; */
+      width: 100%;
+      background-color: white;
+      grid-column: 1 / 3;
+    }
+
+    #gb5 {
+      /* height: 200px; */
+      width: 100%;
+      background-color: purple;
+      grid-row: 1 / 2;
+      grid-column: 3 / 5;
     }
 
     section {
@@ -173,6 +224,16 @@
       <div id="box2" class="nb">Box 2</div>
       <div id="box3" class="nb">Box 3</div>
       <div id="box4" class="nb">Box 4</div>
+    </div>
+  </section>
+  <section>
+    <h1><u><b>Practice of Grid</b></u></h1>
+    <div class="grid-practice">
+      <div class="gridbox" id="gb1"></div>
+      <div class="gridbox" id="gb2"></div>
+      <div class="gridbox" id="gb3"></div>
+      <div class="gridbox" id="gb4"></div>
+      <div class="gridbox" id="gb5"></div>
     </div>
   </section>
 </body>
