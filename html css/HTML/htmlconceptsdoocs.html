@@ -6,10 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color: #E2C799;
+    }
+
+    h2,
+    h3 {
+      color: #E2C799;
+      /* text-align: ; */
+      font-family: 'Kanit', sans-serif;
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .para-text {
+      font-size: 1rem;
+      background-color: #E2C799;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 1.2rem;
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      /* width: 75%; */
+      line-height: 1.5rem;
+    }
+
     .main-heading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      text-align: center;
+      background-color: #9A3B3B;
+      color: #F2ECBE;
+      border-radius: 10px;
+      font-family: 'Kanit', sans-serif;
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      padding: 0.2rem;
+      padding-top: 1rem;
+    }
+
+    .topic-box {
+      background-color: #9A3B3B;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-box {
+      background-color: #9A3B3B;
+      box-sizing: border-box;
+      padding: 1rem;
+      text-align: center;
+      margin: 0;
     }
 
     .main-heading-text {
@@ -28,18 +85,28 @@
       margin-bottom: 100px;
     }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit&family=Libre+Baskerville&family=Montserrat&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 </head>
 
 <body>
   <div class="main-heading">
-    <h1 class="main-heading-text"><u>HTML Concepts</u></h1>
+    <h1 class="main-heading-text">HTML Concepts</h1>
   </div>
-  <div class="tags">
+  <div class="tags topic-box">
     <h2><u>HTML Tags</u></h2>
     <div class="tags-description">
-      <p>
+      <p class="para-text">
         HTML tags are like keywords which defines that how web browser will format and display the content. With the
         help
         of
@@ -58,8 +125,8 @@
         Every tag in HTML is used to perform different tasks.
         If you have used an open tag &#60;&#62;, then you must use a close tag &#60;/tag&#62; (except some tags)
       </p>
-      <p>Here are different types of HTML Tags and some examples : </p>
-      <div class="tags-example">
+      <div class="tags-example para-text">
+        <p>Here are different types of HTML Tags and some examples : </p>
         <ol>
           <li>
             <h4><u>Unclosed HTML Tags :</u> </h4>
@@ -111,269 +178,320 @@
       </div>
     </div>
   </div>
-  <div class="html-elements">
+  <div class="html-elements topic-box">
     <h2><u>HTML Elements</u></h2>
-    <p>The HTML element is everything from the start tag to the end tag:</p>
-    <img src="./htmlconceptsimgs/htmlelementsexample.jpg" alt="depiction of html element format">
-    <p>Above is an example of how an element looks like in HTML, it starts with an opening tag, followed by the content
-      that
-      is supposed to be displayed in the element and is finished using the closing tag of the element</p>
-    <p>Elements in HTML that do not have a closing tag are called empty elements or self-closing elements, They are also
-      called :</p>
+    <div class="para-text">
+      <p>The HTML element is everything from the start tag to the end tag:</p>
+      <img src="./htmlconceptsimgs/htmlelementsexample.jpg" alt="depiction of html element format">
+      <p>Above is an example of how an element looks like in HTML, it starts with an opening tag, followed by the
+        content
+        that
+        is supposed to be displayed in the element and is finished using the closing tag of the element</p>
+    </div>
     <div>
+      <!-- <p>Elements in HTML that do not have a closing tag are called empty elements or self-closing elements, They are
+        also
+        called :</p> -->
       <h2><u>Void Elements</u></h2>
-      <p>A void element is an element whose content model never allows it to have contents under any circumstances. Void
-        elements
-        can have attributes. They only have one opening tag and no closing tag, they can have different attributes but
-        no content<br><br>Examples of such elements are : </p>
-      <ul>
-        <li>&#60;img&#62; - img element</li>
-        <li>&#60;meta&#62; - meta element</li>
-        <li>&#60;input&#62; - input element</li>
-      </ul>
+      <div class="para-text">
+        <p>A void element is an element whose content model never allows it to have contents under any circumstances.
+          Void
+          elements
+          can have attributes. They only have one opening tag and no closing tag, they can have different attributes but
+          no content<br><br>Examples of such elements are : </p>
+        <ul>
+          <li>&#60;img&#62; - img element</li>
+          <li>&#60;meta&#62; - meta element</li>
+          <li>&#60;input&#62; - input element</li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="semantic&nonsemantic-elements">
+  <div class="topic-box">
     <h2><u>Semantic Elements & Non-Semantic Elements</u></h2>
-    <div>
-      <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+    <div class="semantic&nonsemantic-elements para-text">
+      <div>
+        <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+      </div>
+      <div class="examples">
+        <p>Examples of <strong>Non-semantic</strong> elements are : &#60;div&#62; & &#60;span&#62; , they tell nothing
+          about their content
+        </p>
+        <p>Examples of <strong>Semantic</strong> elements are : &#60;form&#62; & &#60;table&#62; , they tell information
+          about their content
+        </p>
+      </div>
     </div>
-    <div class="examples">
-      <p>Examples of <strong>Non-semantic</strong> elements are : &#60;div&#62; & &#60;span&#62; , they tell nothing
-        about their content
-      </p>
-      <p>Examples of <strong>Semantic</strong> elements are : &#60;form&#62; & &#60;table&#62; , they tell information
-        about their content
-      </p>
+    <div class="Section-element topic-box">
+      <h3><u>Section-Element</u></h3>
+      <section class="para-text">
+        <p>The <strong>&#60;section&#62;</strong> element defines a section in a document.
+          A section is a thematic grouping of content, typically with a heading.<br>
+
+          Examples of where a <strong>&#60;section&#62;</strong> element can be used:<br>
+
+        <ul>
+          <li>Chapters</li>
+          <li>Introduction</li>
+          <li>News items</li>
+          <li>Contact information</li>
+        </ul>
+        A web page could normally be split into sections for introduction, content, and contact information.
+        <u><strong>This portion in the html has been written in the section element.</strong></u>
+        </p>
+      </section>
+    </div>
+    <div class="Article-element topic-box">
+      <h3><u>Article-Element</u></h3>
+      <article class="para-text">
+        <p>The
+          <strong>&#60;article&#62;</strong> element specifies independent, self-contained content.
+
+          An article should make sense on its own, and it should be possible to distribute it independently from the
+          rest
+          of the
+          web site.
+
+          Examples of where the <strong>&#60;article&#62;</strong> element can be used:<br>
+
+        <ul>
+          <li>Forum posts</li>
+          <li>Blog posts</li>
+          <li>User comments</li>
+          <li>Newspaper articles</li>
+        </ul>
+        A web page could normally be split into sections for introduction, content, and contact information.
+        <u><strong>This portion in the html has been written in the article element.</strong></u>
+        </p>
+      </article>
+    </div>
+    <div class="header-element topic-box">
+      <h3><u>Header Element</u></h3>
+      <div class="para-text">
+        <p>
+          The <strong>&#60;header&#62;</strong> element represents a container for introductory content or a set of
+          navigational links.
+
+          A
+          <strong>&#60;header&#62;</strong> element typically contains:
+        <ul>
+          <li>one or more heading elements</li>
+          <li>logo or icon</li>
+          <li>authorship information</li>
+        </ul>
+        <img src="HTML/htmlconceptsimgs/headerelementexample.jpg">
+        </p>
+      </div>
+    </div>
+    <div class=" footer-element topic-box">
+      <h3><u>Footer Element</u></h3>
+      <div class="para-text">
+        <p>The <strong>&#60;footer&#62;</strong> element defines a footer for a document or section.
+
+          A
+          <strong>&#60;footer&#62;</strong> element typically contains:
+        <ul>
+          <li>authorship information</li>
+          <li>copyright information</li>
+          <li>contact information</li>
+        </ul>
+        <img src="HTML/htmlconceptsimgs/footerelementexample.jpg">
+        </p>
+      </div>
+    </div>
+    <div class="Nav-element topic-box">
+      <h3><u>Nav Element</u></h3>
+      <div class="para-text">
+        <p>The <strong>&#60;nav&#62;</strong> element defines a set of navigation links. These links can be internal as
+          well
+          as
+          external.<br>Not all links in a document must be inside the nav element, only the major blocks<br>All the
+          below
+          links are in a nav element</p>
+        <nav class="topic-box">
+          <a href="https://www.w3schools.com/html/" style="color : white">HTML</a><br>
+          <a href=" https://www.w3schools.com/css/" style="color : white">CSS</a><br>
+          <a href="https://www.w3schools.com/js/" style="color : white">JavaScript</a><br>
+          <a href="https://jquery.com/" style="color : white">jQuery</a>
+        </nav>
+      </div>
+    </div>
+    <div class="Aside-Element topic-box">
+      <h3><u>Aside Element</u></h3>
+      <div class="para-text">
+        <p>The <strong>&#60;aside&#62;</strong> element defines some content aside from the content it is placed in, the
+          content in it should be indirectly related to the surrounding content.</p>
+        <aside>
+          <h4><u>aside example</u></h4>
+          <p>This is to show the use of the aside element</p>
+        </aside>
+      </div>
     </div>
   </div>
-  <div class="Section-element">
-    <h3><u>Section-Element</u></h3>
-    <section>
-      <p>The <strong>&#60;section&#62;</strong> element defines a section in a document.
-        A section is a thematic grouping of content, typically with a heading.<br>
-
-        Examples of where a <strong>&#60;section&#62;</strong> element can be used:<br>
-
-      <ul>
-        <li>Chapters</li>
-        <li>Introduction</li>
-        <li>News items</li>
-        <li>Contact information</li>
-      </ul>
-      A web page could normally be split into sections for introduction, content, and contact information.
-      <u><strong>This portion in the html has been written in the section element.</strong></u>
-      </p>
-    </section>
-  </div>
-  <div class="Article-element">
-    <h3><u>Article-Element</u></h3>
-    <article>
-      <p>The
-        <strong>&#60;article&#62;</strong> element specifies independent, self-contained content.
-
-        An article should make sense on its own, and it should be possible to distribute it independently from the rest
-        of the
-        web site.
-
-        Examples of where the <strong>&#60;article&#62;</strong> element can be used:<br>
-
-      <ul>
-        <li>Forum posts</li>
-        <li>Blog posts</li>
-        <li>User comments</li>
-        <li>Newspaper articles</li>
-      </ul>
-      A web page could normally be split into sections for introduction, content, and contact information.
-      <u><strong>This portion in the html has been written in the article element.</strong></u>
-      </p>
-    </article>
-  </div>
-  <div class="header-element">
-    <h3><u>Header Element</u></h3>
-    <p>
-      The <strong>&#60;header&#62;</strong> element represents a container for introductory content or a set of
-      navigational links.
-
-      A
-      <strong>&#60;header&#62;</strong> element typically contains:
-    <ul>
-      <li>one or more heading elements</li>
-      <li>logo or icon</li>
-      <li>authorship information</li>
-    </ul>
-    <img src="HTML/htmlconceptsimgs/headerelementexample.jpg>
-    </p>
-  </div>
-  <div class=" footer-element">
-    <h3><u>Footer Element</u></h3>
-    <p>The <strong>&#60;footer&#62;</strong> element defines a footer for a document or section.
-
-      A
-      <strong>&#60;footer&#62;</strong> element typically contains:
-    <ul>
-      <li>authorship information</li>
-      <li>copyright information</li>
-      <li>contact information</li>
-    </ul>
-    <img src="HTML/htmlconceptsimgs/footerelementexample.jpg">
-    </p>
-  </div>
-  <div class="Nav-element">
-    <h3><u>Nav Element</u></h3>
-    <p>The <strong>&#60;nav&#62;</strong> element defines a set of navigation links. These links can be internal as well
-      as
-      external.<br>Not all links in a document must be inside the nav element, only the major blocks<br>All the below
-      links are in a nav element</p>
-    <nav>
-      <a href="https://www.w3schools.com/html/">HTML</a><br>
-      <a href="https://www.w3schools.com/css/">CSS</a><br>
-      <a href="https://www.w3schools.com/js/">JavaScript</a><br>
-      <a href="https://jquery.com/">jQuery</a>
-    </nav>
-  </div>
-  <div class="Aside-Element">
-    <h3><u>Aside Element</u></h3>
-    <p>The <strong>&#60;aside&#62;</strong> element defines some content aside from the content it is placed in, the
-      content in it should be indirectly related to the surrounding content.</p>
-    <aside>
-      <h4><u>aside example</u></h4>
-      <p>This is to show the use of the aside element</p>
-    </aside>
-  </div>
-  <div class="Anchor-tag">
+  <div class="Anchor-tag topic-box">
     <h3><u>Anchor Tag</u></h3>
-    <p>This tag defines a hyperlink, which is used to create a link text that takes you from one page to another.<br>The
-      most important attribute of the anchor tag is the "href" attribute that is used to enter the link of the page.<br>
-      By default, an unvisited link will be blue, a visited one will be purple and an active one will be red.It has been
-      used multiple times in the entire page</p>
+    <div class="para-text">
+      <p>This tag defines a hyperlink, which is used to create a link text that takes you from one page to
+        another.<br>The
+        most important attribute of the anchor tag is the "href" attribute that is used to enter the link of the
+        page.<br>
+        By default, an unvisited link will be blue, a visited one will be purple and an active one will be red.It has
+        been
+        used multiple times in the entire page</p>
+    </div>
   </div>
-  <div>
+  <div class="topic-box">
     <h3><u>HTML Attributes</u></h3>
-    <p>HTML Attributes provide additional information and add aditional properties to the html elements, they can also
-      be used to add style to the html elements or change the properties of HTML elements.<br>Some examples of
-      attributes that are used in html elements are:</p>
-    <ul>
-      <li>
-        <p>The <strong>anchor</strong> tag uses the <strong>href</strong> attribute to link to an external page</p>
-        <img src="./htmlconceptsimgs/anchortagimage.jpg">
-      </li>
-      <li>
-        <p>The <strong>img</strong> tag uses the <strong>src</strong> attribute to get the image that is to be
-          displayed, another attribute that is used in the image tag is the <strong>alt</strong> which is used to
-          display text in case the image has not been fetch</p>
-        <img src="./htmlconceptsimgs/imagetagexample.jpg">
-      </li>
-    </ul>
+    <div class="para-text">
+      <p>HTML Attributes provide additional information and add aditional properties to the html elements, they can also
+        be used to add style to the html elements or change the properties of HTML elements.<br>Some examples of
+        attributes that are used in html elements are:</p>
+      <ul>
+        <li>
+          <p>The <strong>anchor</strong> tag uses the <strong>href</strong> attribute to link to an external page</p>
+          <img src="./htmlconceptsimgs/anchortagimage.jpg">
+        </li>
+        <li>
+          <p>The <strong>img</strong> tag uses the <strong>src</strong> attribute to get the image that is to be
+            displayed, another attribute that is used in the image tag is the <strong>alt</strong> which is used to
+            display text in case the image has not been fetch</p>
+          <img src="./htmlconceptsimgs/imagetagexample.jpg">
+        </li>
+      </ul>
+    </div>
   </div>
-  <div>
+  <div class="topic-box">
     <h3><u>HTML Entities</u></h3>
-    <p>Reserved characters in HTML must be replaced with character entities. <br> For example, if you use the &#60;
+    <p class="para-text">Reserved characters in HTML must be replaced with character entities. <br> For example, if you
+      use the &#60;
       instead of it's html entity value, the document might confuse it with a tag or another element,hence it is
       important to use the html entity's for specefic characters or symbols to be displayed properly<br>
       for eg : the <strong>"& # 6 0 ;"</strong> entity is used to display the <strong>&#60;</strong> sign </p>
   </div>
-  <div>
+  <div class="topic-box">
     <h3><u>HTML Formatting Elements</u></h3>
-    <p>Formatting elements were designed to display special types of text or to modify text to look like a certain way
-      <br>Few examples of how it is done are:
-    </p>
-    <ul>
-      <li>
-        <h4><u>Bold text</u></h4>
-        <p>The following code when written using the <strong>&#60;br&#62;</strong> tag gives us</p>
-        <img src="./htmlconceptsimgs/boldtagexample.jpg" alt="bold-tag-example">
-        <p><b>Bold text example</b></p>
-      </li>
-      <li>
-        <h4><u>Italic text</u></h4>
-        <p>The following code when written using the <strong>&#60;i&#62;</strong> tag gives us</p>
-        <img src="./htmlconceptsimgs/italictextexample.jpg" alt="italic-tag-example">
-        <p><i>Italic text example</i></p>
-      </li>
-    </ul>
+    <div class="para-text">
+      <p>Formatting elements were designed to display special types of text or to modify text to look like a certain way
+        <br>Few examples of how it is done are:
+      </p>
+      <ul>
+        <li>
+          <h4><u>Bold text</u></h4>
+          <p>The following code when written using the <strong>&#60;br&#62;</strong> tag gives us</p>
+          <img src="./htmlconceptsimgs/boldtagexample.jpg" alt="bold-tag-example">
+          <p><b>Bold text example</b></p>
+        </li>
+        <li>
+          <h4><u>Italic text</u></h4>
+          <p>The following code when written using the <strong>&#60;i&#62;</strong> tag gives us</p>
+          <img src="./htmlconceptsimgs/italictextexample.jpg" alt="italic-tag-example">
+          <p><i>Italic text example</i></p>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div>
+  <div class="topic-box">
     <h3><u>HTML Lists</u></h3>
-    <p>HTML Lists allow developers to group a set of items in the form of lists, there are two types of lists in HTML,
-      <b>Ordered</b> and <b>Unordered</b> Lists. <br>Both types of Lists contain list elements that are represented by
-      &#60;li&#62; tags.
-    </p>
-    <p><b>Ordered Lists :</b> these lists are used to store the list of items in an order wise fashion, ordering either
-      by number or alphabet,etc</p>
-    <p><b>Unordered Lists :</b> these lists are used to store the list of items notin an order wise fashion, without
-      ordering either
-      by number or alphabet,etc<br>Examples for both are given below</p>
-    <h4><u>Ordered Lists</u></h4>
-    <ol>
-      <li>Item1</li>
-      <li>Item2</li>
-      <li>Item3</li>
-    </ol>
-    <h4><u>Unordered Lists</u></h4>
-    <ul>
-      <li>Item1</li>
-      <li>Item2</li>
-      <li>Item3</li>
-    </ul>
-    <p>There are various attributes that can be changed in ordered lists to make them ordered by other things as well
-    </p>
-    <p>Another used list tag is the <strong>&#60;dl&#62;</strong> tag, this tag is called the description lists tag and
-      instead of list items, it contains two other tags which are :</p>
-    <dl>
-      <dt>Description term or name used by <strong>&#60;dt&#62;</strong></dt>
-      <dl>- gives the name or term of the topic</dl>
-      <dt>Description used by <strong>&#60;dd&#62;</strong> </dt>
-      <dl>- used to give the description of the term or name used in dt</dl>
-    </dl>
+    <div class="para-text">
+      <p>HTML Lists allow developers to group a set of items in the form of lists, there are two types of lists in HTML,
+        <b>Ordered</b> and <b>Unordered</b> Lists. <br>Both types of Lists contain list elements that are represented by
+        &#60;li&#62; tags.
+      </p>
+      <p><b>Ordered Lists :</b> these lists are used to store the list of items in an order wise fashion, ordering
+        either
+        by number or alphabet,etc</p>
+      <p><b>Unordered Lists :</b> these lists are used to store the list of items notin an order wise fashion, without
+        ordering either
+        by number or alphabet,etc<br>Examples for both are given below</p>
+      <h4><u>Ordered Lists</u></h4>
+      <ol>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+      </ol>
+      <h4><u>Unordered Lists</u></h4>
+      <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+      </ul>
+      <p>There are various attributes that can be changed in ordered lists to make them ordered by other things as well
+      </p>
+      <p>Another used list tag is the <strong>&#60;dl&#62;</strong> tag, this tag is called the description lists tag
+        and
+        instead of list items, it contains two other tags which are :</p>
+      <dl>
+        <dt>Description term or name used by <strong>&#60;dt&#62;</strong></dt>
+        <dl>- gives the name or term of the topic</dl>
+        <dt>Description used by <strong>&#60;dd&#62;</strong> </dt>
+        <dl>- used to give the description of the term or name used in dt</dl>
+      </dl>
+    </div>
   </div>
-  <div>
+  <div class="topic-box">
     <h3><u>Img element</u></h3>
-    <p>The image element as the name says is used to display an image on the html page, this tage is a self closing tag
-      which means that it has no closing tag, it mainly has two attributes, these are :</p>
-    <dl>
-      <dt><u>src</u></dt>
-      <dd>-- This is used to enter the link of the image that is to be used and displayed</dd>
-      <dt><u>alt</u></dt>
-      <dd>-- This is used to give alternative text in case the image is not displayed</dd>
-    </dl>
-    <p>The image tag has been used multiple times on this page</p>
+    <div class="para-text">
+      <p>The image element as the name says is used to display an image on the html page, this tage is a self closing
+        tag
+        which means that it has no closing tag, it mainly has two attributes, these are :</p>
+      <dl>
+        <dt><u>src</u></dt>
+        <dd>-- This is used to enter the link of the image that is to be used and displayed</dd>
+        <dt><u>alt</u></dt>
+        <dd>-- This is used to give alternative text in case the image is not displayed</dd>
+      </dl>
+      <div class="topic-box">
+        <p style="color : white">The image tag has been used multiple times on this page</p>
+      </div>
+    </div>
   </div>
-  <div class="class-ID">
+  <div class="class-ID topic-box">
     <h3><u>ID and Class attributes</u></h3>
-    <p id="id-description">Id and class attributes are attributes that are given to HTML elements that can be used to
-      style either a class
-      of particular HTML elements or a particular element using the id</p>
-    <p>The id is referenced in css using the "#"<br>The class is referenced using the "," symbol</p>
+    <div class="para-text">
+      <p id="id-description">Id and class attributes are attributes that are given to HTML elements that can be used to
+        style either a class
+        of particular HTML elements or a particular element using the id</p>
+      <p>The id is referenced in css using the "#"<br>The class is referenced using the "," symbol</p>
+    </div>
   </div>
-  <div class="meta-tags">
+  <div class="meta-tags topic-box">
     <h3><u>Meta Tags</u></h3>
-    <p>The <b>&#60;meta&#62;</b> tag defines metadata about an HTML document. Metadata is basically data or Information
-      about other data. These tags usually go inside the head element and are not visible on the browser. They are used
-      to specify things like the character set used in the webpage, the keywords, the viewport , etc.<br>Metadata is
-      used by browsers, search-engines and other web services. Meta tags are self-closing tags<br> A few examples of the
-      meta tag being used with
-      different attributes are:</p>
-    <ol>
-      <li>
-        <p>The <b>"charset"</b> attribute is used to define the character encoding for the HTML Document</p>
-        <img src="htmlconceptsimgs/metatag-1.jpg" alt="example of charset attribute">
-      </li>
-      <li>
-        <p>The <b>"name"</b> attribute is used to define the name of the topic while the <b>"content"</b> attribute is
-          used to describe the content or data under the name attribute, a few examples of it are:</p>
-        <ul>
-          <li>
-            <p>This is used to define the viewport for the user and make it friendly to be viewable in any device</p>
-            <img src="./htmlconceptsimgs/metatag-3.jpg">
-          </li>
-          <li>
-            <p>This is used to describe the content of the page under the topic of keywords</p>
-            <img src="./htmlconceptsimgs/metatag-2.jpg">
-          </li>
-        </ul>
-      </li>
-    </ol>
+    <div class="para-text">
+      <p>The <b>&#60;meta&#62;</b> tag defines metadata about an HTML document. Metadata is basically data or
+        Information
+        about other data. These tags usually go inside the head element and are not visible on the browser. They are
+        used
+        to specify things like the character set used in the webpage, the keywords, the viewport , etc.<br>Metadata is
+        used by browsers, search-engines and other web services. Meta tags are self-closing tags<br> A few examples of
+        the
+        meta tag being used with
+        different attributes are:</p>
+      <ol>
+        <li>
+          <p>The <b>"charset"</b> attribute is used to define the character encoding for the HTML Document</p>
+          <img src="htmlconceptsimgs/metatag-1.jpg" alt="example of charset attribute">
+        </li>
+        <li>
+          <p>The <b>"name"</b> attribute is used to define the name of the topic while the <b>"content"</b> attribute is
+            used to describe the content or data under the name attribute, a few examples of it are:</p>
+          <ul>
+            <li>
+              <p>This is used to define the viewport for the user and make it friendly to be viewable in any device</p>
+              <img src="./htmlconceptsimgs/metatag-3.jpg">
+            </li>
+            <li>
+              <p>This is used to describe the content of the page under the topic of keywords</p>
+              <img src="./htmlconceptsimgs/metatag-2.jpg">
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="footer-box">
+    <footer class="none">
+      <p style="color:white"><b>Copyright Karthik</b></p>
+    </footer>
   </div>
 </body>
 
