@@ -98,14 +98,30 @@ console.log(typeof myArr);
 let myObj = {
   name: "Karthik",
   age: 18,
-  increaseage: function () {
+  myArr: ["a", "b", "c"],
+  increaseAge: function () {
+    console.log(this.myArr);
+    let v = this;
+    this.myArr.forEach(function (x) {
+      console.log(v);
+    });
     return (this.age += 1);
   },
 };
 
+let increaseAge = function () {
+  console.log(this.myArr);
+  let v = this;
+  this.myArr.forEach(function (x) {
+    console.log(v);
+  });
+  return (this.age += 1);
+};
+
 //use of this keyword in myObj object
 console.log(myObj.age);
-console.log(myObj.increaseage());
+console.log(myObj.increaseAge());
+//this = myobject
 
 //use of this keyword as global or window object
 console.log(this);
@@ -116,3 +132,44 @@ function trying() {
 }
 
 trying();
+
+//Arrow function inherits it's closest regular function's this scope while using the "this" keyword
+
+//Function definition ,
+// Function Declaration ,
+//Function Statement :
+function fun() {
+  return 3;
+}
+
+//function expression
+const thisval = function (x, y) {
+  return x + y;
+};
+
+function newfunc(thisval) {
+  console.log(thisval(3, 4));
+  console.log(this);
+}
+
+newfunc(thisval);
+
+//Function declaration
+//Function Expression
+//Anonymous Function
+//First Class Functions
+//Callback Functions
+//Higher order functions
+//Arrow Functions
+
+//imp array methods
+//map
+//forEach
+//slice
+//splice
+//array.push, pop
+//reduce
+//filter
+
+//this keyword
+//Prototype

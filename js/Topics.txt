@@ -1,0 +1,31 @@
+//Function declaration
+//Function Expression
+//Anonymous Function
+//First Class Functions
+//Callback Functions
+//Higher order functions
+//Arrow Functions
+//Impure Functions
+//Pure Functions
+
+//imp array methods
+//map
+//forEach  
+//slice
+//splice
+//array.push, pop
+//reduce
+//filter
+
+//this keyword
+//Prototype
+
+//Blocked Scope
+//Lexical Scope
+//Function Scope
+//Global Scope
+
+//immediately invoked function expression (iife)
+//How is javascript made asynchronous
+//Callback functions
+//Event loops
