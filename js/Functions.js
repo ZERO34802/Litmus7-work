@@ -66,3 +66,8 @@ let d = function abc() {
 })();
 
 //Asynchronous vs Synchronous Programming
+//Synchronous starts from the top and goes all the way to the bototm one at a time
+//Asynchronous will start from the top and go all the way to the bottom,
+//however if it encounters an asynchronous function, that is to be run at a later time, it will keep that aside and run the rest
+//of the code.
+//Asynchronous code executes in a different order
