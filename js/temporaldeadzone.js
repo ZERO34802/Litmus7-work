@@ -20,3 +20,9 @@
 
 // In case of let, you can initialize it later or change its value later as well
 // In case of const, you have to initialize it during declaration and cannot change it's value later
+
+//It is most preferable to use const as much as possible and let after that
+
+//How to avoid Temporal Dead Zone ?
+//Always try to put your declarations and initializations on top of the code because then it gets initialized
+// before the variables are used

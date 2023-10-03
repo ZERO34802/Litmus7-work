@@ -27,3 +27,5 @@ var b = 10;
 // In terms of code, it can also be seen as where that function or call is physically present
 // lexical environment of global is NULL
 // This whole sequence of searching in a chain of lexical environments is called Scope Chain
+
+//Block Scope
