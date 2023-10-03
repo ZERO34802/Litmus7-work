@@ -15,9 +15,9 @@ console.log("Hello");
 //The callback function inside the fetch API only executes when the promise is completed or fullfilled
 //callback functions from promises and mutation observers have higher priority than regular functions
 //in the callback queue and are inserted in the microtask queue
-fetch("https://api.netflix.com").then(function cbF() {
-  console.log("FETCH API");
-});
+// fetch("https://api.netflix.com").then(function cbF() {
+//   console.log("FETCH API");
+// });
 
 //seTimeout API
 //provides a method to create a timer to help in including asynchronous functionality
@@ -31,9 +31,9 @@ console.log("Start");
 setTimeout(function cbT() {
   console.log("This is after 2s");
 }, 2000);
-fetch("https://api.netflix.com").then(function cbF() {
-  console.log("FETCH API");
-});
+// fetch("https://api.netflix.com").then(function cbF() {
+//   console.log("FETCH API");
+// });
 
 console.log("End");
 
@@ -51,3 +51,7 @@ console.log("End");
 // 10 -> The event loop will first check the microtask queue if there is any function to be executed, if that is the case, it is pushed into the callstack
 // 11 -> This is now executed and once all the functions are executed in that queue and the callstack is empty, the callback queue is checked
 // 12 -> If any function is present in it, they are pushed into the callstack
+
+fetch("https://fakestoreapi.com/products")
+  .then((res) => res.json())
+  .then((json) => console.log(json));
