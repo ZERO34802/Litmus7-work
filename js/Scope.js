@@ -29,3 +29,5 @@ var b = 10;
 // This whole sequence of searching in a chain of lexical environments is called Scope Chain
 
 //Block Scope
+// A block is a set of statements in a set of curly braces
+// We need a block
