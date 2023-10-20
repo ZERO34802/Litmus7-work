@@ -29,3 +29,14 @@ function CreateObject(radius) {
 const circle = new CreateObject(2);
 
 //Factory function -> CamelCase Naming Convention, returns an object
+//Closures last until the garbage collector picks them up
+
+function person() {
+  var x = 10;
+  function innerfun() {
+    console.log(x);
+  }
+  x += 11;
+  innerfun();
+}
+person();

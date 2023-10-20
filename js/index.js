@@ -134,6 +134,9 @@ function trying() {
 trying();
 
 //Arrow function inherits it's closest regular function's this scope while using the "this" keyword
+//In regular functions the this keyword represented the object that called the function,
+//which could be the window, the document, a button or whatever.
+//With arrow functions the this keyword always represents the object that defined the arrow function.
 
 //Function definition ,
 // Function Declaration ,
