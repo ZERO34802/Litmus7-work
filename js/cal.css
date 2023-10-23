@@ -1,0 +1,43 @@
+.text-center {
+  text-align: center;
+}
+
+.outer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 28rem;
+  width: 28rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-content: center;
+  padding: 20px;
+}
+
+.containter-items {
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.input {
+  font-size: 34px;
+  flex-grow: 10;
+  width: 30rem;
+  height: 5rem;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}

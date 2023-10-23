@@ -29,3 +29,14 @@
 //How is javascript made asynchronous
 //Callback functions
 //Event loops
+
+Promises.Any;
+promises.all
+
+connecting js to html
+//create digital clock
+
+
+//simple calculator with UI
+
+//https://www.youtube.com/watch?v=D3d1lyDR3xc
