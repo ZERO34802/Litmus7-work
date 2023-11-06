@@ -5,7 +5,7 @@
 .outer-flex {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   /* background-color: red; */
   height: 100vh;
 }
@@ -13,31 +13,82 @@
 .container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  /* align-items: flex-start; */
   border: 2px solid black;
   border-radius: 10px;
   height: 28rem;
   width: 28rem;
   flex-wrap: wrap;
   gap: 2rem;
-  align-content: center;
+  /* align-content: flex-start; */
   padding: 20px;
 }
 
+.number-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
 .containter-items {
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.operation-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .input {
   font-size: 34px;
   flex-grow: 10;
-  width: 30rem;
+  width: 20rem;
   height: 5rem;
   border-radius: 20px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 512px) {
+
+  /* body {
+  background-color: aquamarine;
+}
+*/
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 18rem;
+    width: 18rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-content: flex-start;
+    padding: 20px;
+  }
+
+  .number-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .containter-items {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
 }

@@ -1,10 +1,18 @@
 let s = "";
-let buttons = document.querySelectorAll(".containter-items");
-// console.log("here");
-// console.log(buttons);
-// console.log(buttons);
-let arr = Array.from(buttons);
 // console.log(arr);
+
+const addhere = document.getElementById("number-container");
+function addElements() {
+  for (let i = 9; i >= 1; i--) {
+    const newDiv = document.createElement("button");
+    newDiv.classList.add("containter-items");
+    newDiv.innerHTML = i;
+    addhere.appendChild(newDiv);
+  }
+}
+addElements();
+let buttons = document.querySelectorAll(".containter-items");
+let arr = Array.from(buttons);
 arr.forEach((button) => {
   button.addEventListener("click", function (e) {
     // console.log("here");
@@ -19,3 +27,4 @@ arr.forEach((button) => {
     }
   });
 });
+console.log(addhere);

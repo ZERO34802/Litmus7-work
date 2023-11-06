@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="resumetemplate.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body onload="replaceContent()">
+  <!-- The <span> tag is an inline container used to mark up a part of a text, or a part of a document. -->
+  <!-- The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute. -->
+  <div class="container">
+    <div class="header">
+      <div class="full-name">
+        <span class="first-name" id="firstname">John</span>
+        <span class="last-name" id="lastname">Doe</span>
+      </div>
+      <div class="contact-info">
+        <span class="email">Email: </span>
+        <span class="email-val" id="email">john.doe@gmail.com</span>
+        <span class="separator"></span>
+        <span class="phone">Phone: </span>
+        <span class="phone-val" id="phone">111-222-3333</span>
+      </div>
+
+      <div class="about">
+        <span class="position" id="job">Front-End Developer </span>
+        <br>
+        <span class="desc" id="aboutme">
+          I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated,
+          result-focused and seeking a successful team-oriented company with opportunity to grow.
+        </span>
+      </div>
+    </div>
+    <div class="details">
+      <div class="section">
+        <div class="section__title">Experience</div>
+        <div class="section__list">
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name" id="experience1-name">KlowdBox</div>
+              <div class="addr" id="experience1-addr">San Fr, CA</div>
+              <div class="duration" id="experience1-duration">Jan 2011 - Feb 2015</div>
+            </div>
+            <div class="right">
+              <div class="name" id="experience1-role">Fr developer</div>
+              <div class="desc" id="experience1-work">did This and that</div>
+            </div>
+          </div>
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name" id="experience2-name">Akount</div>
+              <div class="addr" id="experience2-addr">San Monica, CA</div>
+              <div class="duration" id="experience2-duration">Jan 2011 - Feb 2015</div>
+            </div>
+            <div class="right">
+              <div class="name">Front-End developer</div>
+              <div class="desc" id="experience2-work">did This and that</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="section">
+        <div class="section__title">Education</div>
+        <div class="section__list">
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name" id="education1-name">Sample Institute of technology</div>
+              <div class="addr" id="education1-addr">San Fr, CA</div>
+              <div class="duration" id="education1-duration">Jan 2011 - Feb 2015</div>
+            </div>
+            <div class="right">
+              <div class="name" id="education1-marks">Fr developer</div>
+              <div class="desc" id="education1-subjects">did This and that</div>
+            </div>
+          </div>
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name" id="education2-name">Akount</div>
+              <div class="addr" id="education2-addr">San Monica, CA</div>
+              <div class="duration" id="education2-duration">Jan 2011 - Feb 2015</div>
+            </div>
+            <div class="right">
+              <div class="name" id="education2-marks">Fr developer</div>
+              <div class="desc" id="education2-subjects">did This and that</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="section">
+        <div class="section__title">Projects</div>
+        <div class="section__list">
+          <div class="section__list-item">
+            <div class="name" id="project1-name">DSP</div>
+            <div class="text" id="project1-desc">I am a front-end developer with more than 3 years of experience writing
+              html, css, and js.
+              I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.
+            </div>
+          </div>
+
+          <div class="section__list-item">
+            <div class="name" id="project2-name">DSP</div>
+            <div class="text" id="project2-desc">I am a front-end developer with more than 3 years of experience writing
+              html, css, and js.
+              I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow. <a
+                href="/login">link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section__title">Skills</div>
+        <div class="skills">
+          <div class="skills__item">
+            <div class="left">
+              <div class="name">
+                HTML
+              </div>
+            </div>
+            <div class="right">
+              <input id="ck1" type="checkbox" checked />
+
+              <label for="ck1"></label>
+              <input id="ck2" type="checkbox" checked />
+
+              <label for="ck2"></label>
+              <input id="ck3" type="checkbox" />
+
+              <label for="ck3"></label>
+              <input id="ck4" type="checkbox" />
+              <label for="ck4"></label>
+              <input id="ck5" type="checkbox" />
+              <label for="ck5"></label>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="skills__item">
+          <div class="left">
+            <div class="name">
+              CSS</div>
+          </div>
+          <div class="right">
+            <input id="ck1" type="checkbox" checked />
+
+            <label for="ck1"></label>
+            <input id="ck2" type="checkbox" checked />
+
+            <label for="ck2"></label>
+            <input id="ck3" type="checkbox" />
+
+            <label for="ck3"></label>
+            <input id="ck4" type="checkbox" />
+            <label for="ck4"></label>
+            <input id="ck5" type="checkbox" />
+            <label for="ck5"></label>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="section">
+        <div class="section__title">
+          Interests
+        </div>
+        <div class="section__list">
+          <div class="section__list-item" id="interests">
+            Basketball, programming.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="resumetemplate.js"></script>
+</body>
+
+</html>

@@ -16,7 +16,7 @@ const promise = createOrder(cart);
 
 //Promise is aresen object which is a placeholder for a certain period of time which is filled after an async operation
 //Contain for a future value
-//An object repnting eventual completion or rejection of an async operation
+//An object representing eventual completion or rejection of an async operation
 
 //Promises and Promise chaining helps us get out of callback hell
 //always return a promise when performing promise chaining
